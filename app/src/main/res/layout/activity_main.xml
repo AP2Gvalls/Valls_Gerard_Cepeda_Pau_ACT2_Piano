@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/whiteKeysLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Tecles -->
+
+        <Button
+            android:id="@+id/btnDo"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="Do"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnRe"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="Re"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/btnMi"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="Mi"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnFa"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="Fa"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</LinearLayout>
