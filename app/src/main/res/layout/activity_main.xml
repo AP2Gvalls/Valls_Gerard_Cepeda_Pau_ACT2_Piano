@@ -1,45 +1,362 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/whiteKeysLayout"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <!-- Tecles -->
-
-        <Button
-            android:id="@+id/btnDo"
-            android:layout_width="60dp"
+        <LinearLayout
+            android:id="@+id/whiteKeysLayout"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Do"
-            android:layout_marginTop="10dp" />
+            android:orientation="horizontal"
+            android:background="#A8A8A8">
 
-        <Button
-            android:id="@+id/btnRe"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:text="Re"
-            android:layout_marginTop="10dp" />
-        <Button
-            android:id="@+id/btnMi"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:text="Mi"
-            android:layout_marginTop="10dp" />
+            <ImageButton
+                android:id="@+id/C2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo"
+                />
 
-        <Button
-            android:id="@+id/btnFa"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:text="Fa"
-            android:layout_marginTop="10dp" />
+            <ImageButton
+                android:id="@+id/D2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo"/>
 
-    </LinearLayout>
-</LinearLayout>
+            <ImageButton
+                android:id="@+id/E2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/F2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/G2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/A2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/B2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/C3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/D3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/E3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/F3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/G3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/A3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/B3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+            <ImageButton
+                android:id="@+id/C4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="#A8A8A8"
+                android:src="@drawable/tecla_blanca_sin_tileo" />
+
+        </LinearLayout>
+
+<!--negres-->
+        <LinearLayout
+            android:id="@+id/blackKeysLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1" />
+
+
+            <ImageButton
+                android:id="@+id/C2b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageButton
+                android:id="@+id/D2b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.0" />
+
+            <ImageButton
+                android:id="@+id/F2b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageButton
+                android:id="@+id/G2b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageButton
+                android:id="@+id/A2b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <ImageButton
+                android:id="@+id/C3b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageButton
+                android:id="@+id/D3b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <ImageButton
+                android:id="@+id/F3b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:id="@+id/G3b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageButton
+                android:id="@+id/A3b"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:elevation="4dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/tecla_negra_sin_tileo" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.8" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>
