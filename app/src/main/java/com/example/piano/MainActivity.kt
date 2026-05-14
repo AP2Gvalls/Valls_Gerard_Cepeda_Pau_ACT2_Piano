@@ -4,6 +4,7 @@ import android.media.AudioAttributes
 import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.widget.Button
 import android.widget.ImageButton
 
@@ -118,84 +119,313 @@ class MainActivity : AppCompatActivity() {
         val botoA3b = findViewById<ImageButton>(R.id.A3b)
 
         //tecles blanques
-        botoC2.setOnClickListener {
-            soundPool.play(c2, 1f, 1f, 0, 0, 1f)
+
+        botoC2.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoC2.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(c2, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoC2.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoD2.setOnClickListener {
-            soundPool.play(d2, 1f, 1f, 0, 0, 1f)
+        botoD2.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoD2.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(d2, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoD2.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoE2.setOnClickListener {
-            soundPool.play(e2, 1f, 1f, 0, 0, 1f)
+        botoE2.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoE2.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(e2, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoE2.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoF2.setOnClickListener {
-            soundPool.play(f2, 1f, 1f, 0, 0, 1f)
+        botoF2.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoF2.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(f2, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoF2.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoG2.setOnClickListener {
-            soundPool.play(g2, 1f, 1f, 0, 0, 1f)
+        botoG2.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoG2.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(g2, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoG2.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoA2.setOnClickListener {
-            soundPool.play(a2, 1f, 1f, 0, 0, 1f)
+        botoA2.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoA2.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(a2, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoA2.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoB2.setOnClickListener {
-            soundPool.play(b2, 1f, 1f, 0, 0, 1f)
+        botoB2.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoB2.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(b2, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoB2.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
 
-        botoC3.setOnClickListener {
-            soundPool.play(c3, 1f, 1f, 0, 0, 1f)
+        botoC3.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoC3.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(c3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoC3.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoD3.setOnClickListener {
-            soundPool.play(d3, 1f, 1f, 0, 0, 1f)
+        botoD3.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoD3.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(d3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoD3.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoE3.setOnClickListener {
-            soundPool.play(e3, 1f, 1f, 0, 0, 1f)
+        botoE3.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoE3.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(e3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoE3.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoF3.setOnClickListener {
-            soundPool.play(f3, 1f, 1f, 0, 0, 1f)
+        botoF3.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoF3.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(f3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoF3.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoG3.setOnClickListener {
-            soundPool.play(g3, 1f, 1f, 0, 0, 1f)
+        botoG3.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoG3.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(g3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoG3.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoA3.setOnClickListener {
-            soundPool.play(a3, 1f, 1f, 0, 0, 1f)
+        botoA3.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoA3.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(a3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoA3.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoB3.setOnClickListener {
-            soundPool.play(b3, 1f, 1f, 0, 0, 1f)
+        botoB3.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoB3.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(b3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoB3.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
-        botoC4.setOnClickListener {
-            soundPool.play(c4, 1f, 1f, 0, 0, 1f)
+        botoC4.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoC4.setImageResource(R.drawable.teclablanca_pressed)
+                    soundPool.play(c4, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoC4.setImageResource(R.drawable.tecla_blanca_sin_tileo)
+                }
+            }
+            true
         }
+
+
+
 
         //negres
-        botoC2b.setOnClickListener {
-            soundPool.play(c2b, 1f, 1f, 0, 0, 1f)
+        botoC2b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoC2b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(d2b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoC2b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoD2b.setOnClickListener {
-            soundPool.play(d2b, 1f, 1f, 0, 0, 1f)
+        botoD2b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoD2b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(d2b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoD2b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoF2b.setOnClickListener {
-            soundPool.play(f2b, 1f, 1f, 0, 0, 1f)
+        botoF2b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoF2b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(f2b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoF2b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoG2b.setOnClickListener {
-            soundPool.play(g2b, 1f, 1f, 0, 0, 1f)
+        botoG2b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoG2b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(g2b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoG2b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoA2b.setOnClickListener {
-            soundPool.play(a2b, 1f, 1f, 0, 0, 1f)
+        botoA2b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoA2b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(a2b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoA2b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
 
-        botoC3b.setOnClickListener {
-            soundPool.play(c3b, 1f, 1f, 0, 0, 1f)
+        botoC3b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoC3b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(c3b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoC3b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoD3b.setOnClickListener {
-            soundPool.play(d3b, 1f, 1f, 0, 0, 1f)
+        botoD3b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoD3b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(d3b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoD3b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoF3b.setOnClickListener {
-            soundPool.play(f3b, 1f, 1f, 0, 0, 1f)
+        botoF3b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoF3b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(f3, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoF3b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoG3b.setOnClickListener {
-            soundPool.play(g3b, 1f, 1f, 0, 0, 1f)
+        botoG3b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoG3b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(g3b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoG3b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
-        botoA3b.setOnClickListener {
-            soundPool.play(a3b, 1f, 1f, 0, 0, 1f)
+        botoA3b.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    botoA3b.setImageResource(R.drawable.teclanegre_pressed)
+                    soundPool.play(a3b, 1f, 1f, 0, 0, 1f)
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    botoA3b.setImageResource(R.drawable.tecla_negra_sin_tileo)
+                }
+            }
+            true
         }
     }
 
